@@ -1,0 +1,204 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+div {
+    display: block;
+}
+.section {
+    background: #FFF;
+}
+.container {
+    margin: 10px auto;
+    width: 980px;
+}
+.top-border {
+    color: #FFF;
+    background: #193040;
+    text-align: left;
+    padding: 10px 5px;
+}
+.box-container {
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    color: #FFF;
+    background: #F5F5F6;
+}
+.box {
+    padding: 10px;
+    float: left;
+    margin: 5px;
+    width: 280px;
+}
+.blue {
+    background: #4090AA;
+}
+.purple {
+    background: #99417B;
+}
+.orange {
+    background: #FC8618;
+}
+span.icon {
+    display: block;
+    width: 64px;
+    height: 64px;
+    background: url(../images/tertiary-64x64.png);
+}
+span.icon.video {
+    background-position: -128px -5504px;
+}
+.box span.icon {
+    float: left;
+}
+.box label.text {
+    float: left;
+    display: block;
+    width: 185px;
+    padding: 15px;
+}
+.box label.info {
+    float: left;
+    clear: both;
+    display: block;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.certi-div {
+    color: #5D99C4;
+    background: #F5F5F6;
+}
+.certi-head {
+    text-align: center;
+}
+.certi-head span {
+    font-size: 30px;
+    font-weight: bold;
+}
+.certi-text {
+    text-align: center;
+    padding: 5px 230px;
+}
+.blue-bar {
+    margin-top: 10px;
+    background: #4F81BD;
+    padding: 10px;
+    color: #FFF;
+}
+.blue-bar span.limited {
+    color: #C7A09F;
+    font-weight: bold;
+}
+.data-sec {
+    border-top: 5px solid #F3F5F8;
+    position: relative;
+    padding-bottom: 10px;
+}
+.arrowDown{
+    background-position: -590px -112px !important;
+}
+.data-sec .arrow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #EEE;
+    background: url(../images/arrow-sprite.png);
+    background-position: -400px -112px;
+    width: 64px;
+    height: 64px;
+    background-color: #F3F5F8;
+}
+.certi-row {
+    overflow: hidden;
+    border-bottom: 1px solid #EEE;
+    padding: 20px 20px 10px 20px;
+}
+.certi-row img.certi-img {
+    float: left;
+}
+.certi-title {
+    float: left;
+    font-weight: bold;
+    font-size: 12px;
+    color: #555;
+    margin: 32px 10px 0px;
+}
+.certi-options {
+    float: right;
+    overflow: hidden;
+    width: 450px;
+}
+.certi-options .status {
+    float: left;
+    margin: 24px 20px 0px;
+}
+.certi-options > button {
+    float: left;
+    margin: 20px 10px 0px;
+}
+.certi-options > .action {
+    float: left;
+    padding: 10px;
+}
+.certi-options > .action > button {
+    margin: 10px 10px 0px;
+}
+.certi-options > .action > a {
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    color: #5F5EC7;
+    line-height: 23px;
+    vertical-align: top;
+}
+.left-align{
+    text-align: left;
+}
+.no-border {
+    border: 0 none;
+}
+table.benefits {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    color: #1288BF;
+    width:90%;
+    margin: 0 40px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+table.benefits tr th {
+    background: #E2E9F2;
+    border: 1px solid #F0F0F1;
+    padding: 10px;
+    font-weight: normal;
+}
+table.benefits tr td {
+    padding: 5px;
+    border: 1px solid #F0F0F1;
+}
+.more {
+    color: #555;
+}
+a {
+    color: #5D99C4;
+    text-decoration: none;
+}
+button {
+    min-width: 140px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+button.btn {
+    font-weight: bold;
+}
+button.btn.default {
+    background: #F0F0F0;
+    border: 1px solid #DFDFDF;
+    color: #111;
+}
+button.btn.blue {
+    background: #3F6DC9;
+    border: 1px solid #33529F;
+    color: #FFF;
+}
