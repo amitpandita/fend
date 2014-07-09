@@ -3,6 +3,8 @@
     <head>
         <title>Certification Center</title>
         <script type="text/javascript" src="js/libs/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery-ui.js"></script>
+        <script type="text/javascript" src="js/libs/jquery.colorbox-min.js"></script>
         <!--<script type="text/javascript" src="js/page.js"></script> -->
         <script>
 $(document).ready(function(){
@@ -13,20 +15,23 @@ $(document).ready(function(){
         var $this = $(this);
         $this.next().next().toggle();
         $this.toggleClass('arrowDown');
-            //$(".data").toggle();
-        /*if ($this.next().next().css('display') == 'none') {
-          $this.css('backgroundPosition', '-400px -112px');
-     }
-     else {
-          $this.addClass('arrowDown');
-     }*/
 
-   
-  });
+
+        });
+
+    //$(".certi-img").colorbox({rel:'group1'});
+   // $(".status").colorbox({inline:true});
+
+    $('.status').click(function(){
+          $('#modal-popup').show();
+          $.colorbox({inline:true,open:true, href:"#modal-popup" }); 
+    });
+
 });
 </script>
 
         <link rel="stylesheet" type="text/css" href="css/page.css">
+        <link rel="stylesheet" type="text/css" href="css/colorbox.css">
     </head>
     <body>
         <div class="section">
@@ -64,7 +69,7 @@ $(document).ready(function(){
                         <img class="certi-img" src="images/proadvisor-qbo-icon-small.gif">
                         <span class="certi-title">New QuickBooks Online Certification</span>
                         <div class="certi-options">
-                            <img class="status" src="images/success-small.png">
+                            <img class="status" href="#modal-popup" src="images/success-small.png">
                             <button class="btn default">Training</button>
                             <div class="action">
                                 <a href="#"><img src="images/icon-view-certificate.gif"> Download Certification</a>
@@ -99,7 +104,7 @@ $(document).ready(function(){
                         <img class="certi-img" src="images/qbes-icon-small.gif">
                         <span class="certi-title">QuickBooks Enterprise Solutions Certification</span>
                         <div class="certi-options">
-                            <img class="status" src="images/help.gif">
+                            <img class="status"  href="#" src="images/help.gif">
                             <button class="btn default">Training</button>
                             <div class="action">
                                 <button class="btn blue">Take Exam</button>
@@ -237,5 +242,13 @@ $(document).ready(function(){
                 </div>
             </div>
         </div>
+
+        <!-- The modal popup div which is hidden by default -->
+
+                    <div id="modal-popup">
+                                <p>
+                                    Sample Dialog Box
+                                </p>
+                    </div>
     </body>
 </html>
