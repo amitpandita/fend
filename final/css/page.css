@@ -187,13 +187,11 @@ a {
     color: #5D99C4;
     text-decoration: none;
 }
-button {
+button.btn {
+    font-weight: bold;
     min-width: 140px;
     padding-top: 5px;
     padding-bottom: 5px;
-}
-button.btn {
-    font-weight: bold;
 }
 button.btn.default {
     background: #F0F0F0;
@@ -215,20 +213,6 @@ button.btn.blue {
     padding: 20px;
     display: none;
 }
-
-
-#button_cancel {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background: url(images/controls.png) no-repeat -25px 0;
-    width: 25px;
-    height: 25px;
-    text-indent: -9999px;
-
-
-}
-
 .popup-container {
 
     color: #FFFFFF;
