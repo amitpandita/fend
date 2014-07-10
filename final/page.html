@@ -27,6 +27,12 @@ $(document).ready(function(){
           $.colorbox({inline:true,open:true,height:'700px', href:"#modal-popup" }); 
     });
 
+    $("#button_cancel").click(function() {
+            parent.$.colorbox.close();
+            $('#modal-popup').hide();
+            return false;
+        });
+
 });
 </script>
 
@@ -247,10 +253,10 @@ $(document).ready(function(){
 
                     <div id="modal-popup">
                         <div class= "popup-container" >
+                        <button id="button_cancel" style="cursor: pointer; position: absolute; top: 0; right: 30px; width: 15px; height:10px;" type="button">X</button>
                             <div class="popup-header">
                                 QuickBooks Online Certification
                             </div>
-
                             <div class="popup-details">
                                 QuickBooks Online Certification Exam Details
                             </div>
