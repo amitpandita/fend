@@ -57,6 +57,7 @@ span.icon.video {
     display: block;
     width: 185px;
     padding: 15px;
+    font-family: sans-serif;
 }
 .box label.info {
     float: left;
@@ -95,19 +96,26 @@ span.icon.video {
     position: relative;
     padding-bottom: 10px;
 }
-.arrowDown{
-    background-position: -590px -112px !important;
-}
+
 .data-sec .arrow {
     position: absolute;
     top: 0;
     right: 0;
     border: 1px solid #EEE;
     background: url(../images/arrow-sprite.png);
-    background-position: -400px -112px;
-    width: 64px;
-    height: 64px;
+    background-position: -416px -125px;
+    width: 32px;
+    height: 32px;
     background-color: #F3F5F8;
+}
+
+.data-sec > .arrow-head {
+
+    padding-left: 10px;
+}
+
+.arrowDown{
+    background-position: -608px -134px !important;
 }
 .certi-row {
     overflow: hidden;
@@ -140,6 +148,7 @@ span.icon.video {
 .certi-options > .action {
     float: left;
     padding: 10px;
+    
 }
 .certi-options > .action > button {
     margin: 10px 10px 0px;
@@ -148,10 +157,19 @@ span.icon.video {
     display: block;
     text-decoration: none;
     font-size: 14px;
-    color: #5F5EC7;
+    color: #537DCB;;
     line-height: 23px;
     vertical-align: top;
+    border: 0px;
+    font-weight: bolder;
 }
+
+
+.certi-options > .action > a img {
+    border: none;
+    
+}
+
 .left-align{
     text-align: left;
     vertical-align: top;
@@ -182,6 +200,7 @@ table.benefits tr td {
 }
 .more {
     color: #555;
+    padding-left: 10px;
 }
 a {
     color: #5D99C4;
@@ -218,8 +237,10 @@ button.btn.blue {
     color: #FFFFFF;
     
     text-align: left;
-    padding: 10px 5px;
-    border-left-color: #007DA9 !important;
+    padding: 0;
+    border-left: 1px solid;
+    border-left-color:  #007DA9 !important;
+
 }
 
 .popup-header {
@@ -228,7 +249,7 @@ button.btn.blue {
     background: #007DA9;
     padding: 20px 20px ;
     font-size: 23px;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: sans-serif;
 
 }
 
@@ -237,7 +258,7 @@ button.btn.blue {
     color: #404247;
     padding: 20px;
     font-size: 19px;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: sans-serif;
 }
 
 
@@ -247,12 +268,10 @@ table.details {
     border-spacing: 0px;
     color: #1288BF;
     width:90%;
-    margin: 0 40px;
+    margin: 20px 30px 0px;
     font-size: 12px;
-    margin-bottom: 20px;
     padding:0;
-    margin:0;
-    font-family: "Arial Black", Gadget, sans-serif;
+    font-family: sans-serif;
 
 }
 
@@ -276,4 +295,11 @@ ul li {
 
 ol li {
     margin-left: -30px;
+}
+ul {
+    margin-top: 0px;
+}
+
+ol {
+    margin-top: 0px;
 }

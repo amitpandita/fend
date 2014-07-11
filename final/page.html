@@ -24,20 +24,22 @@ $(document).ready(function(){
 
     $('.status').click(function(){
           $('#modal-popup').show();
-          $.colorbox({inline:true,open:true,height:'600px', href:"#modal-popup" }); 
+          $.colorbox({inline:true,open:true,fixed:true,height:'600px', href:"#modal-popup" }); 
+          $('.popup-header').colorbox({fixed:true});
     });
 
-    $("#button_cancel").click(function() {
-            parent.$.colorbox.close();
-            $('#modal-popup').hide();
-            return false;
-        });
+    $(document).bind('cbox_closed ', function(){
+        $('#modal-popup').hide();
+    });
+
+
 
 });
 </script>
 
         <link rel="stylesheet" type="text/css" href="css/page.css">
         <link rel="stylesheet" type="text/css" href="css/colorbox.css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
     </head>
     <body>
         <div class="section">
@@ -56,7 +58,7 @@ $(document).ready(function(){
                     </div>
                     <div class="box orange">
                         <span class="icon video"></span>
-                        <label class="text">Maintaining Certifications and Status</label>
+                        <label class="text">Maintaining<br/> Certifications and Status</label>
                         <label class="info">5 min</label>
                     </div>
                 </div>
@@ -153,7 +155,7 @@ $(document).ready(function(){
                 </div>
                 <div class="data-sec">
                     <a class="arrow" href="javascript:void(0)"></a>
-                    <h3>Benefits of Certification</h3>
+                    <h3 class="arrow-head">Benefits of Certification</h3>
                     <div class="data" style="text-align:center;">
                         <table class="benefits">
                             <thead>
@@ -237,7 +239,7 @@ $(document).ready(function(){
                 </div>
                 <div class="data-sec">
                     <a href="javascript:void(0)" class="arrow"></a>
-                    <h3>More</h3>
+                    <h3 class="arrow-head">More</h3>
                     <div class="data more">
                         <p>Access your past certification logos and certificates. <a href="#">Click here</a></p>
                         <p>Access training history, CPE certificates and certification expiration dates. <a href="#">Click here</a></p>
@@ -328,9 +330,9 @@ $(document).ready(function(){
                                         <tr>
                                             <th style="width: 15%; ">Paths</th>
                                             <th style="width: 15%; ">Who is this right for?</th>
-                                            <th style="width: 15%; ">Take optional training?</th>
-                                            <th style="width: 45%; ">Steps</th>
-                                            <th style="width: 10%; ">Total Time</th>
+                                            <th style="width: 11%; ">Take optional training?</th>
+                                            <th style="width: 44%; ">Steps</th>
+                                            <th style="width: 15%; ">Total Time</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -355,11 +357,14 @@ $(document).ready(function(){
                                                         Go directly to the Exam and see how, do- you get FOUR attempts to pass the exam
                                                     </li>
                                                     <li>
-                                                        Max four attempts per section
+                                                        Upon completion of a section, you'll get a list of any questions you answered incorrectly
+                                                    </li>
+                                                    <li>
+                                                        Study the topics you missed and come back and answer the missed questions
                                                     </li>
                                                 </ol>
                                             </td>
-                                            <td class="left-align">Yes(On Optional Training courses)</td>
+                                            <td class="left-align"><b>Optional Courses:</b> approx 1-2 hours <br/><b>Exam:</b>approx 1-2 hours</td>
                                         </tr>
                                     </tbody>  
                                 </table>
