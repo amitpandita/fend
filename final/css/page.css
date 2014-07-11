@@ -256,7 +256,7 @@ button.btn.blue {
 .popup-details {
 
     color: #404247;
-    padding: 20px;
+    padding: 20px 0px 0px 50px;
     font-size: 19px;
     font-family: sans-serif;
 }
@@ -268,7 +268,7 @@ table.details {
     border-spacing: 0px;
     color: #1288BF;
     width:90%;
-    margin: 20px 30px 0px;
+    margin: 0px 0px 0px 40px;
     font-size: 12px;
     padding:0;
     font-family: sans-serif;
