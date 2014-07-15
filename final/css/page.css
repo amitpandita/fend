@@ -55,6 +55,7 @@ span.icon.video {
 .box label.text {
     float: left;
     display: block;
+    height: 34px;
     width: 185px;
     padding: 15px;
     font-family: sans-serif;
@@ -63,6 +64,7 @@ span.icon.video {
     float: left;
     clear: both;
     display: block;
+    font-family: sans-serif;
     font-size: 12px;
     margin-left: 10px;
 }
@@ -74,18 +76,26 @@ span.icon.video {
     text-align: center;
 }
 .certi-head span {
-    font-size: 30px;
+    font-size: 45px;
     font-weight: bold;
+    font-family: sans-serif;
 }
 .certi-text {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    padding: 5px 252px;
     text-align: center;
-    padding: 5px 230px;
+    width: 525px;
 }
 .blue-bar {
-    margin-top: 10px;
     background: #4F81BD;
-    padding: 10px;
     color: #FFF;
+    font-family: sans-serif;
+    margin-top: 10px;
+    padding: 10px;
+    
+    
 }
 .blue-bar span.limited {
     color: #C7A09F;
@@ -99,14 +109,34 @@ span.icon.video {
 
 .data-sec .arrow {
     position: absolute;
-    top: 0;
-    right: 0;
-    border: 1px solid #EEE;
-    background: url(../images/arrow-sprite.png);
-    background-position: -416px -125px;
-    width: 32px;
-    height: 32px;
+    /*top: 0;
+    /*right: 0;
+    /*border: 1px solid #EEE;
+    /*background: url(../images/arrow-sprite.png);
+    /*background-position: -416px -125px;
+    /*width: 32px;
+    /*height: 32px;
+    /* background-color: #F3F5F8; */
+
+
+
     background-color: #F3F5F8;
+    background-position: -80px -20px;
+    background-size: 144px auto;
+    border: 1px solid #E3EAF3;
+    border-radius: 0 0 2px 2px;
+    bottom: -24px;
+    cursor: pointer;
+    float: right;
+    height: 24px;
+    margin-right: 15px;
+    position: relative;
+    right: -14px;
+    top: -14px;
+    width: 27px;
+    background-image: url(../images/arrow-sprite.png) ;
+    background-repeat: no-repeat;
+    background-position: -80px -20px;
 }
 
 .data-sec > .arrow-head {
@@ -114,8 +144,8 @@ span.icon.video {
     padding-left: 10px;
 }
 
-.arrowDown{
-    background-position: -608px -134px !important;
+.data-sec .arrowDown{
+    background-position: -120px -20px;
 }
 .certi-row {
     overflow: hidden;
@@ -302,4 +332,26 @@ ul {
 
 ol {
     margin-top: 0px;
+}
+
+.data-sec .arrow-btn {
+
+    background-color: #F3F5F8;
+    background-position: -80px -20px;
+    background-size: 144px auto;
+    border: 1px solid #E3EAF3;
+    border-radius: 0 0 2px 2px;
+    bottom: -24px;
+    cursor: pointer;
+    float: right;
+    height: 24px;
+    margin-right: 15px;
+    position: relative;
+    right: -14px;
+    top: -14px;
+    width: 27px;
+    background-image: url(../images/arrow-sprite.png) ;
+    background-repeat: no-repeat;
+    background-position: -80px -20px;
+
 }
